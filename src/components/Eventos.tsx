@@ -5,6 +5,12 @@ import adolecentes from '../../public/assets/backgrounds/adolecentes.jpg';
 import jovenes from '../../public/assets/backgrounds/jovenes.jpg';
 import ShinyText from './ShinyText';
 
+interface Evento {
+  titulo: string;
+  fecha: string;
+  img: string;
+}
+
 export const Eventos = () => {
   // Estado para el carrusel superior
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -30,14 +36,14 @@ export const Eventos = () => {
   };
 
   // Base de datos simulada de imágenes asignadas a cada categoría
-  const seccionCaballeros = Array(4).fill({ titulo: "Congreso de Caballeros", fecha: "12, 13 y 14 de junio", img: imageBg });
-  const seccionMujeres = Array(4).fill({ titulo: "Encuentro de Damas", fecha: "12, 13 y 14 de junio", img: damas });
-  const seccionParejas = Array(4).fill({ titulo: "Retiro de Parejas", fecha: "19 y 20 de junio", img: imageBg }); // Reutilizada temporalmente
-  const seccionJovenes = Array(4).fill({ titulo: "Congreso de Jóvenes", fecha: "12, 13 y 14 de junio", img: jovenes });
-  const seccionAdolescentes = Array(4).fill({ titulo: "Congreso de Adolescentes", fecha: "12, 13 y 14 de junio", img: adolecentes });
+  const seccionCaballeros: Evento[] = Array(4).fill({ titulo: "Congreso de Caballeros", fecha: "12, 13 y 14 de junio", img: imageBg });
+  const seccionMujeres: Evento[] = Array(4).fill({ titulo: "Encuentro de Damas", fecha: "12, 13 y 14 de junio", img: damas });
+  const seccionParejas: Evento[] = Array(4).fill({ titulo: "Retiro de Parejas", fecha: "19 y 20 de junio", img: imageBg }); // Reutilizada temporalmente
+  const seccionJovenes: Evento[] = Array(4).fill({ titulo: "Congreso de Jóvenes", fecha: "12, 13 y 14 de junio", img: jovenes });
+  const seccionAdolescentes: Evento[] = Array(4).fill({ titulo: "Congreso de Adolescentes", fecha: "12, 13 y 14 de junio", img: adolecentes });
 
   // Lista totalizadora de 25 imágenes para la sección final (repetidas armoniosamente)
-  const todosLosEventos = [
+  const todosLosEventos: Evento[] = [
     ...seccionCaballeros,
     ...seccionMujeres,
     ...seccionParejas,
@@ -51,7 +57,7 @@ export const Eventos = () => {
   ];
 
   // Componente interno reutilizable para renderizar las tarjetas pequeñas de eventos
-  const TarjetaEvento = ({ evento }) => (
+  const TarjetaEvento = ({ evento }: { evento: Evento }) => (
     <div className="group flex flex-col bg-white text-gray-900 rounded-xl shadow-md overflow-hidden border border-gray-200 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg">
       <div className="relative overflow-hidden aspect-[3/4] bg-gray-100">
         <div className="absolute top-2 left-2 bg-blue-600 text-[9px] font-bold px-1.5 py-0.5 rounded text-white uppercase tracking-wider z-10 shadow-sm">
