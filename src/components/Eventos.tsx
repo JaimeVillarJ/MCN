@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import imageBg from '../../public/assets/backgrounds/caballeros.jpg';
 import damas from '../../public/assets/backgrounds/ester.jpg';
 import adolecentes from '../../public/assets/backgrounds/adolecentes.jpg';
