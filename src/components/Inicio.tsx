@@ -29,8 +29,9 @@ export const Inicio = () => {
               src="./assets/label.jpeg"
               alt="frase"
               className="
-                mt-70
-                w-[950px]
+                mt-16
+                w-full
+                max-w-[950px]
                 h-auto
                 rounded-2xl
                 shadow-2xl
@@ -42,7 +43,7 @@ export const Inicio = () => {
                 transition-all
                 duration-300
                 hover:scale-105
-                hover:shadow-[0_20px_50px_rgba(0,0,0,0.25)]
+                hover:shadow-2xl
               "
             />
 
@@ -85,7 +86,7 @@ export const Inicio = () => {
                 </p>
               </article>
             </div> */}
-            <div className="mt-22 mb-20 flex flex-col items-stretch gap-8 px-6 md:flex-row md:justify-center md:gap-12">
+            <div className="mt-8 mb-20 flex flex-col items-stretch gap-8 px-6 md:flex-row md:justify-center md:gap-12">
 
               <div className="flex w-full max-w-md flex-col rounded-3xl bg-white p-8 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                 <div className="mb-4 flex items-center gap-3">
@@ -132,7 +133,7 @@ export const Inicio = () => {
               <div className="mx-auto mt-4 h-1 w-32 rounded-full bg-amber-300"></div>
             </div>
 
-            <div className="mt-22 mb-20 flex flex-col items-stretch gap-8 px-6 md:flex-row md:justify-center md:gap-12">
+            <div className="mt-8 mb-20 flex flex-col items-stretch gap-8 px-6 md:flex-row md:justify-center md:gap-12">
 
               <div className="flex w-full max-w-md flex-col rounded-3xl bg-white p-8 shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                 <div className="mb-4 flex items-center gap-3">
