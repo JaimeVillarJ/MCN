@@ -22,7 +22,7 @@ function App() {
             <Route
               path="/"
               element={
-                <section className="flex flex-col items-center w-full">
+                <section className="flex flex-col items-center w-full mt-50">
                   <Inicio />
                 </section>
               }
