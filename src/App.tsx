@@ -10,11 +10,13 @@ import { Jovenes } from "./components/comunidad/Jovenes";
 import { Damas } from "./components/comunidad/Damas";
 import { Contactanos } from "./components/Contactanos";
 import { Eventos } from "./components/Eventos";
+import { Donaciones } from "./components/Donaciones";
+import { Contenido } from "./components/Contenido";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="relative w-full bg-amber-700">
+      <div className="relative w-full bg-[#807e65]">
         <Header />
 
         <main className="relative z-10 flex flex-col min-h-screen">
@@ -96,6 +98,24 @@ function App() {
               element={
                 <section className="flex flex-col items-center w-full mt-50">
                   <Contactanos />
+                </section>
+              }
+            />
+
+            <Route
+              path="/contenido"
+              element={
+                <section className="flex flex-col items-center w-full mt-50">
+                  <Contenido />
+                </section>
+              }
+            />
+
+            <Route
+              path="/donaciones"
+              element={
+                <section className="flex flex-col items-center w-full mt-50">
+                  <Donaciones />
                 </section>
               }
             />

@@ -9,6 +9,8 @@ export default function Header() {
     { label: "Eventos", path: "/eventos" },
     { label: "Comunidad", path: "/comunidad" },
     { label: "Contacto", path: "/contacto" },
+    { label: "Contenido", path: "/contenido" },
+    { label: "Donaciones", path: "/donaciones" },
   ];
 
   return (

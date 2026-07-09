@@ -2,7 +2,7 @@
 export const Footer = () => {
   return (
     <div>
-    <footer className="bg-amber-900 text-white">
+    <footer className="bg-[#1c1d1a] text-white">
       <div className="max-w-7xl mx-auto px-6 py-12">
 
         <div className="grid md:grid-cols-3 gap-10">
@@ -70,10 +70,7 @@ export const Footer = () => {
             © {new Date().getFullYear()} Mision Cristiana Para Las Naciones (MCN). Todos los derechos reservados.
           </p>
 
-          <p className="text-blue-300 text-xs mt-2">
-            "Porque donde están dos o tres congregados en mi nombre,
-            allí estoy yo en medio de ellos." — Mateo 18:20
-          </p>
+          
         </div>
 
       </div>

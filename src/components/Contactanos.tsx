@@ -67,13 +67,13 @@ export const Contactanos: React.FC = () => {
         {/* COLUMNA IZQUIERDA: Formulario de Mensajes (Ocupa 7 columnas) */}
         <div className="lg:col-span-7 bg-white/5 backdrop-blur-md p-6 md:p-8 rounded-2xl border border-white/10 shadow-xl">
           <h2 className="text-xl md:text-2xl font-bold text-yellow-400 mb-2">Envíanos un mensaje</h2>
-          <p className="text-xs md:text-sm text-gray-400 mb-6">
+          <p className="text-xs md:text-sm text-white mb-6">
             ¿Tienes alguna petición de oración, duda sobre los eventos o quieres ser voluntario? Escríbenos.
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label htmlFor="nombre" className="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-1">Nombre Completo</label>
+              <label htmlFor="nombre" className="block text-xs font-bold uppercase tracking-wider text-white mb-1">Nombre Completo</label>
               <input 
                 id="nombre"
                 type="text" 
@@ -88,7 +88,7 @@ export const Contactanos: React.FC = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label htmlFor="correo" className="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-1">Correo Electrónico</label>
+                <label htmlFor="correo" className="block text-xs font-bold uppercase tracking-wider text-white mb-1">Correo Electrónico</label>
                 <input 
                   id="correo"
                   type="email" 
@@ -101,7 +101,7 @@ export const Contactanos: React.FC = () => {
                 />
               </div>
               <div>
-                <label htmlFor="telefono" className="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-1">Teléfono / WhatsApp</label>
+                <label htmlFor="telefono" className="block text-xs font-bold uppercase tracking-wider text-white mb-1">Teléfono / WhatsApp</label>
                 <input 
                   id="telefono"
                   type="tel" 
@@ -115,7 +115,7 @@ export const Contactanos: React.FC = () => {
             </div>
 
             <div>
-              <label htmlFor="mensaje" className="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-1">¿Cómo podemos ayudarte?</label>
+              <label htmlFor="mensaje" className="block text-xs font-bold uppercase tracking-wider text-white mb-1">¿Cómo podemos ayudarte?</label>
               <textarea 
                 id="mensaje"
                 name="mensaje"
@@ -143,11 +143,11 @@ export const Contactanos: React.FC = () => {
           {/* Bloque de Información */}
           <div className="bg-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 shadow-xl text-left">
             <h3 className="text-lg font-bold text-yellow-400 mb-4 border-b border-white/10 pb-2">📍 Nuestra Ubicación</h3>
-            <p className="text-sm text-gray-300 font-medium">Sede Principal de la Iglesia</p>
-            <p className="text-xs text-gray-400 mt-1">Av. Principal Calle Falsa #123-45</p>
-            <p className="text-xs text-gray-400">Bogota, Colombia</p>
+            <p className="text-sm text-white font-medium">Sede Principal de la Iglesia</p>
+            <p className="text-xs text-black mt-1">Av. Principal Calle Falsa #123-45</p>
+            <p className="text-xs text-black">Bogota, Colombia</p>
             
-            <div className="mt-4 flex flex-col space-y-1 text-xs text-gray-300">
+            <div className="mt-4 flex flex-col space-y-1 text-xs text-white">
               <p><strong>📞 Teléfono:</strong> (601) 123-4567</p>
               <p><strong>✉️ Correo:</strong> contacto@tuiglesia.org</p>
             </div>
@@ -158,16 +158,16 @@ export const Contactanos: React.FC = () => {
             <h3 className="text-lg font-bold text-yellow-400 mb-4 border-b border-white/10 pb-2">⏰ Horarios de Reuniones</h3>
             <div className="space-y-3 text-xs md:text-sm">
               <div className="flex justify-between items-center border-b border-white/5 pb-1">
-                <span className="text-gray-300 font-semibold">Domingos (Servicio Principal)</span>
-                <span className="text-yellow-400 font-bold">7:00 AM / 10:00 AM</span>
+                <span className="text-white font-semibold">Domingos (Servicio Principal)</span>
+                <span className="text-yellow-400 font-bold">8:00 AM / 10:00 AM</span>
               </div>
               <div className="flex justify-between items-center border-b border-white/5 pb-1">
-                <span className="text-gray-300 font-semibold">Viernes (Noche de Milagros)</span>
-                <span className="text-gray-400">7:00 PM</span>
+                <span className="text-white font-semibold">Viernes (Noche de Milagros)</span>
+                <span className="text-yellow-400">7:00 PM</span>
               </div>
               <div className="flex justify-between items-center">
-                <span className="text-gray-300 font-semibold">Sábados (Jóvenes / Adolescentes)</span>
-                <span className="text-gray-400">4:00 PM</span>
+                <span className="text-white font-semibold">Viernes (Jóvenes / Adolescentes)</span>
+                <span className="text-yellow-400">7:00 PM</span>
               </div>
             </div>
           </div>
